@@ -13,8 +13,9 @@ router.get('/', async (req, res) => {
 router.post("/", async (req, res) => {
     const users = await loadUsersCollection();
     await users.insertOne({
+        name: req.body.name,
         email: req.body.email,
-        password: req.body.passwpord,
+        password: req.body.password,
         createdAt: new Date()
     });
     res.status(201).send();
