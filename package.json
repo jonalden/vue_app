@@ -24,7 +24,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "latest": "^0.2.0",
-    "mongodb": "^3.5.7"
+    "mongodb": "^3.5.7",
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
